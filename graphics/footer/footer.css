@@ -1,0 +1,10 @@
+
+body > footer#main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--color-3);
+    color: var(--color-4);
+    font-size: 1.2rem;
+    height: 100%;
+}

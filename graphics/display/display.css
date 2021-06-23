@@ -1,0 +1,90 @@
+body > main#main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    overflow: hidden;
+}
+
+body > main#main-content section#container {
+    background-color: var(--color-5);
+    border-radius: min(6.3vw, 6.3vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min(calc(75vw - 10rem), calc(75vh - 10rem));
+    height: min(calc(88vw - 10rem), calc(88vh - 10rem));
+}
+
+body > main#main-content section#container svg#screen {
+    background-color: var(--color-6);
+    border-radius: min(0.3vw, 0.3vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min(calc(70vw - 10rem), calc(70vh - 10rem));
+    height: min(calc(70vw - 10rem), calc(70vh - 10rem));
+}
+
+body > main#main-content section#container svg#screen rect.overlay {
+    fill: #222;
+    opacity: 0.7;
+    width: 101%;
+    height: 101%;
+}
+
+body > main#main-content section#container svg#screen text {
+    fill: #eee;
+    text-anchor: middle;
+    font-weight: bold;
+    font-size: 9.4px;
+}
+
+body > main#main-content section#container svg#screen tspan {
+    font-size: 4px;
+}
+
+body > main#main-content section#container svg#screen rect.snake-part {
+    fill: var(--color-7);
+}
+
+body > main#main-content section#container svg#screen rect.fruit {
+    fill: var(--color-8);
+}
+
+body > main#main-content section.instructions {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 12vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--color-4);
+}
+
+body > main#main-content section.instructions h2 {
+    margin: 0.75rem 0;
+    padding: 0;
+    font-size: 1.7rem;
+}
+
+body > main#main-content section.instructions p {
+    margin: 0.25rem 0;
+    padding: 0;
+    font-size: 1.4rem;
+}
+
+
+@media (max-aspect-ratio: 6/7) {
+    body > main#main-content {
+        flex-direction: column;
+    }
+
+    body > main#main-content section.instructions {
+        width: 75vw;
+    }
+}

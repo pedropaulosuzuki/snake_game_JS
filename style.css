@@ -1,0 +1,43 @@
+@import url('./graphics/header/header.css');
+@import url('./graphics/display/display.css');
+@import url('./graphics/footer/footer.css');
+
+:root {
+    --ui-scale: 1;
+    /* --ui-scale: 2.2; */
+    --color-1: hsl(210,  5%, 18%); /* Main background */
+    --color-2: hsl(210,  5%, 25%); /* Main header */
+    --color-3: hsl(210,  5%,  8%); /* Main footer */
+    --color-4: hsl(  0,  0%, 100%); /* Font color */
+    --color-5: hsl(221, 49%, 43%); /* Videogame color */
+    --color-6: hsl(271, 49%, 17%); /* Screen color */
+    --color-7: hsl(  0,  0%, 95%); /* Snake color */
+    --color-8: hsl(123, 55%, 50%); /* Fruit color */
+    font-size: calc(1vh * var(--ui-scale));
+    font-family: sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-1: hsl(210, 15%, 88%); /* Main background */
+        --color-2: hsl(210, 15%, 95%); /* Main header */
+        --color-3: hsl(210, 15%, 80%); /* Main footer */
+        --color-4: hsl(  0,  0%, 20%); /* Font color */
+        --color-5: hsl(221, 49%, 43%); /* Videogame color */
+        --color-6: hsl(  0,  0%, 95%); /* Screen color */
+        --color-7: hsl(271, 49%, 17%); /* Snake color */
+        --color-8: hsl(123, 55%, 50%); /* Fruit color */
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-1);
+    display: grid;
+    grid-template-rows: 7fr calc(100vh - 8rem) 2.5fr;
+    overflow: hidden;
+}

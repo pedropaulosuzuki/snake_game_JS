@@ -1,0 +1,13 @@
+
+body > header#main-header {
+    overflow: hidden;
+    background-color: var(--color-2);
+    color: var(--color-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.9rem;
+    font-weight: bold;
+    user-select: none;
+}
