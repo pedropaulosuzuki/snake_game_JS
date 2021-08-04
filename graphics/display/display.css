@@ -14,6 +14,7 @@ body > main#main-content section#container {
     justify-content: center;
     width: min(calc(75vw - 10rem), calc(75vh - 10rem));
     height: min(calc(88vw - 10rem), calc(88vh - 10rem));
+    filter: drop-shadow(1rem 1rem 0 #0005);
 }
 
 body > main#main-content section#container svg#screen {
